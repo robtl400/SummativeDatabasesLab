@@ -1,6 +1,8 @@
 from flask import Flask, make_response
 from flask_migrate import Migrate
 
+import sys
+sys.path.append('..')
 from models import *
 
 app = Flask(__name__)
